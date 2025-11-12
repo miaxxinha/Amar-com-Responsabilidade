@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amar com Responsabilidade</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="esquerda">
+            <div class="logo">
+                <img src="imagens/logo.png" alt="logo">
+            </div>
+            <div class="titulo">Amar com Responsabilidade</div>
+        </div>
+        <nav>
+            <a href="#dados">Dados</a>
+            <a href="#prevencao">Prevenção</a>
+            <a href="#locais">Locais</a>
+            <a href="#campanha">Campanha</a>
+            <a href="#habitos-saude">Formulário</a>
+        </nav>
+    </header>
+</body>
+
+
+    <main>
+        <!-- Introdução -->
+        <div class="introflex">
+            <div class="introduction">
+                <div class="title">
+                    <a>O amor é livre, mas a </a><a class="redintrotitle">responsabilidade </a><a>é de todos.</a>
+                </div>
+                <div class="textintro">
+                    <a>Informa-te, protege-te e faz o teste. <br> A prevenção é o primeiro passo para cuidar de ti e de
+                        quem amas.</a>
+                </div>
+                <div class="btn-mais">Saber mais</div>
+            </div>
+            <div class="imagemintro">
+                <img src="imagens/Poems-to-Cheer-Her-Up.webp" alt="">
+            </div>
+        </div>
+
+        <!-- Dados sobre DST -->
+        <div class="dados dst">
+            <div class="dst-title">Dados sobre DSTs entre jovens</div>
+            <div class="dst-txt">
+                Sabias que, segundo a Organização Mundial da Saúde, mais de <strong>1 milhão de pessoas</strong>
+                contraem uma DST todos os dias? <br>
+                60% dos novos casos ocorrem entre os 15 e os 24 anos. <br>
+                Em Portugal, o número de diagnósticos de VIH tem vindo a crescer entre jovens adultos. <br>
+                O uso irregular de preservativo é o principal fator de risco. <br><br>
+                <em>Fonte: OMS, DGS, ONUSIDA</em>
+            </div>
+        </div>
+
+        <!-- Métodos de Prevenção -->
+        <div class="prevencao">
+            <h2>Métodos de Prevenção</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="imagens/condoms.jpg" alt="Preservativo" />
+                    <h3>Usa Preservativo</h3>
+                    <p>O preservativo é o método mais eficaz para prevenir a transmissão de DSTs e VIH.</p>
+                </div>
+
+                <div class="card">
+                    <img src="imagens/teste hiv.jpg" alt="Teste" />
+                    <h3>Faz o Teste</h3>
+                    <p>Testar regularmente é um ato de amor-próprio. É rápido, gratuito e confidencial.</p>
+                </div>
+
+                <div class="card">
+                    <img src="imagens/casal.jpg" alt="Comunicação" />
+                    <h3>Comunica com o teu parceiro</h3>
+                    <p>Falar sobre proteção e confiança fortalece as relações e a saúde de ambos.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Locais de Testagem -->
+        <div class="locais">
+            <h2>Locais de Testagem Gratuita</h2>
+            <ul>
+                <li> <strong>CheckpointLX</strong> – Rua Luz Soriano, Lisboa</li>
+                <li> <strong>Centro de Saúde da Boavista</strong> – Porto</li>
+                <li> <strong>Hospital de Santa Maria</strong> – Lisboa</li>
+                <li> <strong>Consultas de IST do SNS</strong> – disponíveis em todo o país</li>
+            </ul>
+            <p>
+                Consulta o
+                <a href="https://www.sns24.gov.pt/pt/tema/exames-e-tratamentos/exames-e-tratamentos-testes-rapidos-de-rastreio-de-infecoes-por-vih-vhb-e-vhc/"
+                    target="_blank">site da SNS24</a>
+                    ,
+                    <a href=https://abraco.pt/o-que-fazemos/testes-rapidos/ target="_blank">site da Associação ABRAÇO</a>
+                    ou o
+                     <a href=https://positivo.org.pt/centros-de-deteccao-do-vih-em-portugal/
+                     target="_blank">site da Associação Positivo</a>
+                para encontrar o local mais próximo.
+            </p>
+        </div>
+
+
+
+
+        <!-- Junta-te à Campanha -->
+        <div class="campanha">
+            <h2>Junta-te à Campanha</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem ou compromisso:</label>
+                <textarea id="mensagem" name="mensagem" rows="4"
+                    placeholder="Ex: Comprometo-me a fazer o teste regularmente."></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="habitos-saude">
+            <h2>Formulário Anónimo: Hábitos e Rotinas de Saúde</h2>
+            <p>
+                Este formulário é totalmente anónimo. As respostas ajudam-nos a compreender melhor os hábitos de
+                prevenção e cuidados com a saúde sexual entre as pessoas.
+            </p>
+
+            <form class="form-habitos">
+                <!-- Pergunta 1 -->
+                <label>1. Faixa etária:</label>
+                <select required>
+                    <option value="">Escolhe uma opção</option>
+                    <option value="menos18">Menos de 18 anos</option>
+                    <option value="18-24">18-24 anos</option>
+                    <option value="25-30">25-30 anos</option>
+                    <option value="31+">Mais de 30 anos</option>
+                </select>
+
+                <!-- Pergunta 2 -->
+                <label>2. Costumas ter um parceiro(a) fixo(a), múltiplos parceiros ou estás solteiro(a)?</label>
+                <select required>
+                    <option value="">Escolhe uma opção</option>
+                    <option value="fixo">Parceiro(a) fixo(a)</option>
+                    <option value="multiplos">Múltiplos parceiros</option>
+                    <option value="solteiro">Solteiro(a)</option>
+                    <option value="prefiro-nao-dizer">Prefiro não dizer</option>
+                </select>
+
+                <!-- Pergunta 3 -->
+                <label>3. Usas preservativo nas tuas relações sexuais?</label>
+                <select required>
+                    <option value="">Escolhe uma opção</option>
+                    <option value="sempre">Sempre</option>
+                    <option value="asvezes">Às vezes</option>
+                    <option value="nunca">Nunca</option>
+                </select>
+
+                <!-- Pergunta 4 -->
+                <label>4. Usas (ou já usaste) outro método contracetivo? (Podes escolher mais de uma opção)</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" value="pilula"> Pílula</label>
+                    <label><input type="checkbox" value="anelcontracetivo"> Anel contracetivo</label>
+                    <label><input type="checkbox" value="adesivocontracetivo"> Adesivo contracetivo</label>
+                    <label><input type="checkbox" value="implantecontracetivo"> Implante contracetivo</label>
+                    <label><input type="checkbox" value="diu"> Dispositivo Intrauterino (DIU)</label>
+                    <label><input type="checkbox" value="diafragma"> Diafragma</label>
+                    <label><input type="checkbox" value="capuzcervical"> Capuz cervical</label>
+                    <label><input type="checkbox" value="vasectomia"> Vasectomia</label>
+                    <label><input type="checkbox" value="laqueacao"> Laqueação de trompas</label>
+                    <label><input type="checkbox" value="nunca"> Nunca usei métodos contracetivos</label>
+                </div>
+
+                <!-- Pergunta 5 -->
+                <label>5. Quando foi a última vez que fizeste um teste para DSTs?</label>
+                <select required>
+                    <option value="">Escolhe uma opção</option>
+                    <option value="menos6">Nos últimos 6 meses</option>
+                    <option value="6-12">Entre 6 meses e 1 ano</option>
+                    <option value="mais1ano">Há mais de 1 ano</option>
+                    <option value="nunca">Nunca fiz</option>
+                </select>
+
+                <!-- Pergunta 6 -->
+                <label>6. Onde costumas procurar informação sobre saúde sexual?</label>
+                <select required>
+                    <option value="">Escolhe uma opção</option>
+                    <option value="internet">Internet / Redes sociais</option>
+                    <option value="profissionais">Profissionais de saúde</option>
+                    <option value="amigos">Amigos / parceiros</option>
+                    <option value="escola">Escola / universidade</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <!-- Pergunta 7 -->
+                <label>7. Queres deixar algum comentário ou sugestão?</label>
+                <textarea rows="4" placeholder="Ex: Seria bom haver mais campanhas nas universidades..."></textarea>
+
+                <button type="submit">Submeter (Anónimo)</button>
+            </form>
+        </div>
+    </main>
+
+<footer>
+    <p>© 2025 Campanha  “Amar com Responsabilidade” | Organizada pela Associação ABRAÇO </p>
+    <p>Fontes: OMS, DGS, ONUSIDA</p>
+  </footer>
+
+
+    <!-- Scroll suave para classes -->
+    <script>
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const alvo = link.getAttribute('href').replace('#', '');
+                const secao = document.querySelector('.' + alvo);
+                if (secao) {
+                    secao.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+
+
+</html>

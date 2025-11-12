@@ -1,0 +1,569 @@
+/**GERAL**/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+}
+
+/**HEADER**/
+header {
+    position: sticky;
+    top: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #da0000;
+    padding: 1.2rem 5%;
+    font-size: 23px;
+    z-index: 10;
+}
+
+.esquerda {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header .titulo {
+    font-weight: bold;
+}
+
+.logo img {
+    height: 56px;
+    margin: 0;
+    display: block;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+header nav a:hover {
+    opacity: 0.8;
+}
+
+
+/**INTRO**/
+.introflex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.introduction {
+    flex: 1 1 50%;
+    background-color: rgb(218, 218, 218);
+    padding: 120px 30px 90px;
+    text-align: center;
+}
+
+.introduction .title a {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.introduction .redintrotitle {
+    color: #da0000;
+}
+
+.introduction .textintro {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.introduction .btn-mais {
+    margin-top: 70px;
+    background-color: white;
+    padding: 15px 25px;
+    border-radius: 30px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.introduction .btn-mais:hover {
+    background-color: #da0000;
+    color: white;
+}
+
+.imagemintro {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagemintro img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/**DADOS**/
+.dados {
+    background-color: #f8f8f8;
+    padding: 100px 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dst-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #da0000;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.dst-txt {
+    font-size: 20px;
+    line-height: 1.8;
+    max-width: 800px;
+    color: #333;
+}
+
+.dst-txt strong {
+    color: #da0000;
+}
+
+/**CARDS**/
+.prevencao {
+    background-color: #f8f8f8;
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.prevencao h2 {
+    font-size: 36px;
+    color: #da0000;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    letter-spacing: 1px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 22px;
+    color: #da0000;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #444;
+}
+
+/**LOCAIS**/
+.locais {
+    background-color: #f8f8f8;
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.locais h2 {
+    font-size: 36px;
+    color: #da0000;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.locais ul {
+    list-style: none;
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+.locais ul li strong {
+    color: #da0000;
+}
+
+.locais p {
+    font-size: 18px;
+}
+
+.locais a {
+    color: #da0000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.locais a:hover {
+    text-decoration: underline;
+}
+
+.campanha {
+    background-color: #f8f8f8;
+    padding: 100px 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campanha h2 {
+    font-size: 36px;
+    color: #da0000;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.campanha form {
+    background: white;
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.campanha label {
+    font-weight: 600;
+    color: #333;
+    font-size: 16px;
+}
+
+.campanha input,
+.campanha textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    resize: none;
+}
+
+.campanha input:focus,
+.campanha textarea:focus {
+    border-color: #da0000;
+    outline: none;
+    box-shadow: 0 0 5px rgba(218, 0, 0, 0.3);
+}
+
+.campanha button {
+    margin-top: 10px;
+    background-color: #da0000;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.campanha button:hover {
+    background-color: #b30000;
+    transform: scale(1.03);
+}
+
+.campanha input::placeholder,
+.campanha textarea::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .introduction {
+        padding: 80px 20px;
+    }
+
+    .introduction .title a {
+        font-size: 32px;
+    }
+
+    .introduction .textintro {
+        font-size: 18px;
+    }
+
+    .imagemintro img {
+        height: 400px;
+    }
+
+    .dst-title,
+    .prevencao h2,
+    .locais h2,
+    .campanha h2 {
+        font-size: 30px;
+    }
+
+    .dst-txt {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .introflex {
+        flex-direction: column-reverse;
+    }
+
+    .introduction,
+    .imagemintro {
+        flex: 1 1 100%;
+    }
+
+    .introduction {
+        padding: 60px 20px;
+    }
+
+    .introduction .title a {
+        font-size: 28px;
+    }
+
+    .introduction .textintro {
+        font-size: 16px;
+    }
+
+    .introduction .btn-mais {
+        margin-top: 40px;
+        padding: 12px 20px;
+    }
+
+    .imagemintro img {
+        height: 300px;
+        width: 100%;
+    }
+
+    .dados,
+    .prevencao,
+    .locais,
+    .campanha {
+        padding: 60px 5%;
+    }
+
+    .dst-title,
+    .prevencao h2,
+    .locais h2,
+    .campanha h2 {
+        font-size: 26px;
+    }
+
+    .dst-txt,
+    .locais p {
+        font-size: 16px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .campanha form {
+        padding: 25px 30px;
+    }
+
+    .campanha input,
+    .campanha textarea {
+        font-size: 15px;
+    }
+
+    .campanha button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+.habitos-saude {
+    background-color: #f8f8f8;
+    padding: 100px 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.habitos-saude h2 {
+    font-size: 36px;
+    color: #da0000;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.habitos-saude p {
+    max-width: 800px;
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 50px;
+    line-height: 1.7;
+}
+
+.form-habitos {
+    background: white;
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.form-habitos label {
+    font-weight: 600;
+    color: #333;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.form-habitos select,
+.form-habitos textarea,
+.form-habitos input[type="text"],
+.form-habitos input[type="email"] {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-habitos select:focus,
+.form-habitos textarea:focus {
+    border-color: #da0000;
+    outline: none;
+    box-shadow: 0 0 5px rgba(218, 0, 0, 0.3);
+}
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px 20px;
+    margin-top: 10px;
+}
+
+.checkbox-group label {
+    font-weight: 500;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+}
+
+.form-habitos button {
+    margin-top: 20px;
+    background-color: #da0000;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.form-habitos button:hover {
+    background-color: #b30000;
+    transform: scale(1.03);
+}
+
+/* FOOTER */
+footer {
+  background:  #da0000;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .habitos-saude {
+        padding: 60px 5%;
+    }
+
+    .habitos-saude h2 {
+        font-size: 28px;
+    }
+
+    .form-habitos {
+        padding: 25px 30px;
+    }
+
+    .checkbox-group {
+        grid-template-columns: 1fr;
+    }
+}
